@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .winner {
+            color: green;
+        }
+
+        .loser {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+   <section class="section"></section>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half  is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image"></div>
+                    <figure class = "image is-2by1"></figure>
+                    <!-- need full path or url for this -->
+                    <img src="http://cdn.shopify.com/s/files/1/0337/7469/products/Soccer-Ball-on-Green-Grass-Wall-Mural_252de950-5e87-4f6c-8a13-7955594cf464.jpeg?v=1628780352" alt="" srcset="">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Soccer Score Keeper
+                        </p>
+
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class=title is-1> <span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                            <br>
+                            <p class="subtitle"> Use the buttons below to keep score!</p>
+
+                            <!-- labeling the new selection with a subheader (inline keeps it lined up and evem) -->
+                            <label for="playto" class = "label is-large is-inline">Playing to</label>
+                            <!-- new div for the rounded selections -->
+                            <div class="select is-rounded">
+                                <select name="" id="playto">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- add a footer -->
+                    <footer class="card-footer">
+                        <button id="p1Button" class="is-primary button card-footer-item"> +1 Team One</button>
+                        <button id="p2Button" class="is-info button card-footer-item"> +1 Team Two</button>
+                        <button id="reset" class="is-danger button card-footer-item"> Reset</button>
+                        <!-- <a href="#" class="card-footer-item">Save</a>
+                        <a href="#" class="card-footer-item">Edit</a>
+                        <a href="#" class="card-footer-item">Delete</a> -->
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- updating headers -->
+    <!-- <h1> <span id="p1Display">0</span> to <span id="p2Display">0</span> </h1>
+    <select name="" id="playto">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select> -->
+
+    <!-- <h1> <span id="p1Display">0</span> to <span id="p2Display">0</span> </h1>
+    <select name="" id="playto">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select> -->
+
+    <!-- <div class="select is-rounded">
+        <select>
+            <option>Rounded dropdown</option>
+            <option>With options</option>
+        </select>
+    </div> -->
+    <!-- buttons -->
+    <!-- <button id="p1Button">+1 Player One</button>
+    <button id="p2Button">+1 Player Two</button>
+    <button id="reset"> Reset </button> -->
+
+    <script src="refactored_app.js"></script>
+</body>
+
+</html>
